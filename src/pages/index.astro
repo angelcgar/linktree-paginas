@@ -1,6 +1,12 @@
 ---
 // import Welcome from "../components/Welcome.astro";
+import Columna from "../components/Columna.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+
+import DataJson from "../assets/json/Links.json";
+import LinkSocial from "../components/LinkSocial.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -8,114 +14,52 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
 	<div class="container">
-		<div class="profile">
-			<!-- Cambia la imagen por tu foto o logo -->
-			<img
-				src="https://avatars.githubusercontent.com/u/146035436?v=4"
-				alt="Mi perfil"
-				class="profile-img"
-			/>
-			<h1>Mis Enlaces de Interés</h1>
-			<p>Todo lo que me gusta en un solo lugar</p>
-		</div>
+		<Hero />
 
 		<div class="links-container">
 			<!-- Columna 1 -->
-			<div class="links-column">
-				<a
-					href="https://github.com"
-					class="link-item"
-					target="_blank"
-					style="animation-delay: 0.1s;"
-				>
-					<img
-						src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-						alt="GitHub"
-						class="link-icon"
-					/>
-					<span class="link-text">GitHub - Repositorios de código</span>
-				</a>
-
-				<a
-					href="https://medium.com"
-					class="link-item"
-					target="_blank"
-					style="animation-delay: 0.2s;"
-				>
-					<img
-						src="https://cdn-icons-png.flaticon.com/512/2111/2111501.png"
-						alt="Medium"
-						class="link-icon"
-					/>
-					<span class="link-text">Medium - Artículos y tutoriales</span>
-				</a>
-			</div>
+			<Columna>
+				{
+					DataJson.primer.map((param) => (
+						<LinkSocial
+							hrefLink={param.href}
+							imgSrc={param.img.src}
+							imgAlt={param.img.alt}
+							spanText={param.span}
+						/>
+					))
+				}
+			</Columna>
 
 			<!-- Columna 2 -->
-			<div class="links-column">
-				<a
-					href="https://www.youtube.com"
-					class="link-item"
-					target="_blank"
-					style="animation-delay: 0.3s;"
-				>
-					<img
-						src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
-						alt="YouTube"
-						class="link-icon"
-					/>
-					<span class="link-text">YouTube - Videos educativos</span>
-				</a>
-
-				<a
-					href="https://stackoverflow.com"
-					class="link-item"
-					target="_blank"
-					style="animation-delay: 0.4s;"
-				>
-					<img
-						src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png"
-						alt="Stack Overflow"
-						class="link-icon"
-					/>
-					<span class="link-text">Stack Overflow - Preguntas y respuestas</span>
-				</a>
-			</div>
+			<Columna>
+				{
+					DataJson.segundo.map((param) => (
+						<LinkSocial
+							hrefLink={param.href}
+							imgSrc={param.img.src}
+							imgAlt={param.img.alt}
+							spanText={param.span}
+						/>
+					))
+				}
+			</Columna>
 
 			<!-- Columna 3 -->
-			<div class="links-column">
-				<a
-					href="https://www.udemy.com"
-					class="link-item"
-					target="_blank"
-					style="animation-delay: 0.5s;"
-				>
-					<img
-						src="https://cdn-icons-png.flaticon.com/512/1688/1688400.png"
-						alt="Udemy"
-						class="link-icon"
-					/>
-					<span class="link-text">Udemy - Cursos en línea</span>
-				</a>
-
-				<a
-					href="https://www.reddit.com"
-					class="link-item"
-					target="_blank"
-					style="animation-delay: 0.6s;"
-				>
-					<img
-						src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png"
-						alt="Reddit"
-						class="link-icon"
-					/>
-					<span class="link-text">Reddit - Comunidades de interés</span>
-				</a>
-			</div>
+			<Columna>
+				{
+					DataJson.tercera.map((param) => (
+						<LinkSocial
+							hrefLink={param.href}
+							imgSrc={param.img.src}
+							imgAlt={param.img.alt}
+							spanText={param.span}
+						/>
+					))
+				}
+			</Columna>
 		</div>
 
-		<footer>
-			© 2023 Mis Enlaces Favoritos - Todos los derechos reservados
-		</footer>
+		<Footer />
 	</div>
 </Layout>

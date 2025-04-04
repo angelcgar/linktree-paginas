@@ -1,0 +1,56 @@
+{
+  "primer": [
+    {
+      "href": "https://github.com",
+      "img": {
+        "src": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+        "alt": "github"
+      },
+      "span": "GitHub - Repositorios de código"
+    },
+    {
+      "href": "https://medium.com",
+      "img": {
+        "src": "https://cdn-icons-png.flaticon.com/512/2111/2111501.png",
+        "alt": "Medium"
+      },
+      "span": "Medium - Artículos y tutoriales"
+    }
+  ],
+  "segundo": [
+    {
+      "href": "https://www.youtube.com",
+      "img": {
+        "src": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+        "alt": "YouTube"
+      },
+      "span": "YouTube - Videos educativos"
+    },
+    {
+      "href": "https://stackoverflow.com",
+      "img": {
+        "src": "https://cdn-icons-png.flaticon.com/512/2111/2111628.png",
+        "alt": "Stack Overflow"
+      },
+      "span": "Stack Overflow - Preguntas y respuestas"
+    }
+  ],
+  "tercera": [
+    {
+      "href": "https://www.udemy.com",
+      "img": {
+        "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
+        "alt": "Udemy"
+      },
+      "span": "Udemy - Cursos en línea"
+    },
+    {
+      "href": "https://www.reddit.com",
+      "img": {
+        "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+        "alt": "Reddit"
+      },
+      "span": "Reddit - Comunidades de interés"
+    }
+  ]
+}

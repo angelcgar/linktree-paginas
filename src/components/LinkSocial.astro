@@ -1,0 +1,13 @@
+---
+const { hrefLink, imgSrc, imgAlt, spanText } = Astro.props;
+---
+
+<a
+  href={hrefLink}
+  class="link-item"
+  target="_blank"
+  style="animation-delay: 0.1s;"
+>
+  <img src={imgSrc} alt={imgAlt} class="link-icon" />
+  <span class="link-text">{spanText}</span>
+</a>
