@@ -7,6 +7,7 @@ import Layout from "../layouts/Layout.astro";
 
 import DataJson from "../assets/json/Links.json";
 import LinkSocial from "../components/LinkSocial.astro";
+import SubTitulo from "../components/SubTitulo.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -19,6 +20,8 @@ import LinkSocial from "../components/LinkSocial.astro";
 		<div class="links-container">
 			<!-- Columna 1 -->
 			<Columna>
+				<SubTitulo text="Código" />
+
 				{
 					DataJson.primer.map((param) => (
 						<LinkSocial
@@ -33,6 +36,8 @@ import LinkSocial from "../components/LinkSocial.astro";
 
 			<!-- Columna 2 -->
 			<Columna>
+				<SubTitulo text="Interés" />
+
 				{
 					DataJson.segundo.map((param) => (
 						<LinkSocial
@@ -47,6 +52,8 @@ import LinkSocial from "../components/LinkSocial.astro";
 
 			<!-- Columna 3 -->
 			<Columna>
+				<SubTitulo text="Mas tarde" />
+
 				{
 					DataJson.tercera.map((param) => (
 						<LinkSocial
