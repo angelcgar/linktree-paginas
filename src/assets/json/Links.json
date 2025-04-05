@@ -1,9 +1,9 @@
 {
   "primer": {
-    "title": "Primeros links",
-    "subtitle1": "Código",
-    "subtitle2": "Interés",
-    "subtitle3": "Mas tarde",
+    "title_section": "Código de internet",
+    "subtitle_category_first": "Código de repositorios",
+    "subtitle_category_two": "Interés",
+    "subtitle_category_three": "En la mira",
     "links": [
       {
         "href": "https://github.com",
@@ -20,11 +20,59 @@
           "alt": "Medium"
         },
         "span": "the-algorithms - Para aprender sobre algoritmos"
+      },
+      {
+        "href": "https://github.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+          "alt": "github"
+        },
+        "span": "GitHub - Repositorios de código"
+      },
+      {
+        "href": "https://the-algorithms.com/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/4941/4941052.png",
+          "alt": "Medium"
+        },
+        "span": "the-algorithms - Para aprender sobre algoritmos"
+      },
+      {
+        "href": "https://the-algorithms.com/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/4941/4941052.png",
+          "alt": "Medium"
+        },
+        "span": "the-algorithms - Para aprender sobre algoritmos"
+      },
+      {
+        "href": "https://the-algorithms.com/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/4941/4941052.png",
+          "alt": "Medium"
+        },
+        "span": "the-algorithms - Para aprender sobre algoritmos"
+      },
+      {
+        "href": "https://the-algorithms.com/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/4941/4941052.png",
+          "alt": "Medium"
+        },
+        "span": "the-algorithms - Para aprender sobre algoritmos"
+      },
+      {
+        "href": "https://the-algorithms.com/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/4941/4941052.png",
+          "alt": "Medium"
+        },
+        "span": "the-algorithms - Para aprender sobre algoritmos"
       }
     ]
   },
   "segundo": {
-    "title": "Segundos links",
+    "title": "Mas tarde",
     "subtitle1": "Código",
     "subtitle2": "Interés",
     "subtitle3": "Mas tarde",
@@ -36,6 +84,14 @@
           "alt": "YouTube"
         },
         "span": "YouTube - Videos educativos"
+      },
+      {
+        "href": "https://stackoverflow.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111628.png",
+          "alt": "Stack Overflow"
+        },
+        "span": "Stack Overflow - Preguntas y respuestas"
       },
       {
         "href": "https://stackoverflow.com",

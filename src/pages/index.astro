@@ -17,56 +17,31 @@ import DataJson from "../assets/json/Links.json";
 <Layout>
 	<div class="container">
 		<Hero />
-		<SubTitulo text={DataJson.primer.title} />
+		<SubTitulo text={DataJson.primer.title_section} />
 
 		<ContainerGrid>
-			<!-- Columna 1 -->
 			<Columna>
-				<ColumnaTitle text={DataJson.primer.subtitle1} />
+				<ColumnaTitle text={DataJson.primer.subtitle_category_first} />
+			</Columna>
+			<Columna>
+				<ColumnaTitle text={DataJson.primer.subtitle_category_two} />
+			</Columna>
+			<Columna>
+				<ColumnaTitle text={DataJson.primer.subtitle_category_three} />
+			</Columna>
 
-				{
-					DataJson.primer.links.map((param) => (
+			{
+				DataJson.primer.links.map((param) => (
+					<Columna>
 						<LinkSocial
 							hrefLink={param.href}
 							imgSrc={param.img.src}
 							imgAlt={param.img.alt}
 							spanText={param.span}
 						/>
-					))
-				}
-			</Columna>
-
-			<!-- Columna 2 -->
-			<Columna>
-				<ColumnaTitle text={DataJson.primer.subtitle2} />
-
-				{
-					DataJson.segundo.links.map((param) => (
-						<LinkSocial
-							hrefLink={param.href}
-							imgSrc={param.img.src}
-							imgAlt={param.img.alt}
-							spanText={param.span}
-						/>
-					))
-				}
-			</Columna>
-
-			<!-- Columna 3 -->
-			<Columna>
-				<ColumnaTitle text={DataJson.primer.subtitle3} />
-
-				{
-					DataJson.tercera.links.map((param) => (
-						<LinkSocial
-							hrefLink={param.href}
-							imgSrc={param.img.src}
-							imgAlt={param.img.alt}
-							spanText={param.span}
-						/>
-					))
-				}
-			</Columna>
+					</Columna>
+				))
+			}
 		</ContainerGrid>
 
 		<Separator />
@@ -75,48 +50,22 @@ import DataJson from "../assets/json/Links.json";
 		<SubTitulo text={DataJson.segundo.title} />
 
 		<ContainerGrid>
-			<Columna>
-				<ColumnaTitle text={DataJson.segundo.subtitle1} />
-				{
-					DataJson.primer.links.map((param) => (
+			<Columna><ColumnaTitle text={DataJson.segundo.subtitle1} /></Columna>
+			<Columna><ColumnaTitle text={DataJson.segundo.subtitle2} /></Columna>
+			<Columna><ColumnaTitle text={DataJson.segundo.subtitle3} /></Columna>
+
+			{
+				DataJson.segundo.links.map((param) => (
+					<Columna>
 						<LinkSocial
 							hrefLink={param.href}
 							imgSrc={param.img.src}
 							imgAlt={param.img.alt}
 							spanText={param.span}
 						/>
-					))
-				}
-			</Columna>
-
-			<Columna>
-				<ColumnaTitle text={DataJson.segundo.subtitle2} />
-
-				{
-					DataJson.primer.links.map((param) => (
-						<LinkSocial
-							hrefLink={param.href}
-							imgSrc={param.img.src}
-							imgAlt={param.img.alt}
-							spanText={param.span}
-						/>
-					))
-				}
-			</Columna>
-
-			<Columna>
-				<ColumnaTitle text={DataJson.segundo.subtitle3} />
-				{
-					DataJson.primer.links.map((param) => (
-						<LinkSocial
-							hrefLink={param.href}
-							imgSrc={param.img.src}
-							imgAlt={param.img.alt}
-							spanText={param.span}
-						/>
-					))
-				}
-			</Columna>
+					</Columna>
+				))
+			}
 		</ContainerGrid>
 		<Footer />
 	</div>
