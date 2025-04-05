@@ -1,0 +1,30 @@
+---
+
+---
+
+<div class="links-container">
+  <slot />
+</div>
+
+<style>
+  /* Estilo de los enlaces - 3 columnas */
+  .links-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .links-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .links-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -8,6 +8,9 @@ import Layout from "../layouts/Layout.astro";
 import DataJson from "../assets/json/Links.json";
 import LinkSocial from "../components/LinkSocial.astro";
 import SubTitulo from "../components/SubTitulo.astro";
+import ContainerGrid from "../components/ContainerGrid.astro";
+import Separator from "../components/Separator.astro";
+import ColumnaTitle from "../components/ColumnaTitle.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -16,11 +19,12 @@ import SubTitulo from "../components/SubTitulo.astro";
 <Layout>
 	<div class="container">
 		<Hero />
+		<SubTitulo text="Primeros links" />
 
-		<div class="links-container">
+		<ContainerGrid>
 			<!-- Columna 1 -->
 			<Columna>
-				<SubTitulo text="Código" />
+				<ColumnaTitle text="Código" />
 
 				{
 					DataJson.primer.map((param) => (
@@ -36,7 +40,7 @@ import SubTitulo from "../components/SubTitulo.astro";
 
 			<!-- Columna 2 -->
 			<Columna>
-				<SubTitulo text="Interés" />
+				<ColumnaTitle text="Interés" />
 
 				{
 					DataJson.segundo.map((param) => (
@@ -52,7 +56,7 @@ import SubTitulo from "../components/SubTitulo.astro";
 
 			<!-- Columna 3 -->
 			<Columna>
-				<SubTitulo text="Mas tarde" />
+				<ColumnaTitle text="Mas tarde" />
 
 				{
 					DataJson.tercera.map((param) => (
@@ -65,8 +69,66 @@ import SubTitulo from "../components/SubTitulo.astro";
 					))
 				}
 			</Columna>
-		</div>
+		</ContainerGrid>
 
+		<Separator text="Sección 1" />
+
+		<!-- Segunda sección -->
+		<SubTitulo text="Hola mundo" />
+
+		<ContainerGrid>
+			<Columna>
+				<ColumnaTitle text="Hola mundo2 " />
+				{
+					DataJson.primer.map((param) => (
+						<LinkSocial
+							hrefLink={param.href}
+							imgSrc={param.img.src}
+							imgAlt={param.img.alt}
+							spanText={param.span}
+						/>
+					))
+				}
+			</Columna>
+
+			<Columna>
+				<ColumnaTitle text="Hola" />
+
+				{
+					DataJson.primer.map((param) => (
+						<LinkSocial
+							hrefLink={param.href}
+							imgSrc={param.img.src}
+							imgAlt={param.img.alt}
+							spanText={param.span}
+						/>
+					))
+				}
+			</Columna>
+
+			<Columna>
+				<ColumnaTitle text="Hola" />
+				{
+					DataJson.primer.map((param) => (
+						<LinkSocial
+							hrefLink={param.href}
+							imgSrc={param.img.src}
+							imgAlt={param.img.alt}
+							spanText={param.span}
+						/>
+					))
+				}
+			</Columna>
+		</ContainerGrid>
 		<Footer />
 	</div>
 </Layout>
+
+<style>
+	.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 40px auto;
+		text-align: center;
+	}
+</style>
