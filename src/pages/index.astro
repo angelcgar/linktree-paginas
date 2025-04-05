@@ -5,29 +5,27 @@ import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 
-import DataJson from "../assets/json/Links.json";
 import LinkSocial from "../components/LinkSocial.astro";
 import SubTitulo from "../components/SubTitulo.astro";
 import ContainerGrid from "../components/ContainerGrid.astro";
 import Separator from "../components/Separator.astro";
 import ColumnaTitle from "../components/ColumnaTitle.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import DataJson from "../assets/json/Links.json";
 ---
 
 <Layout>
 	<div class="container">
 		<Hero />
-		<SubTitulo text="Primeros links" />
+		<SubTitulo text={DataJson.primer.title} />
 
 		<ContainerGrid>
 			<!-- Columna 1 -->
 			<Columna>
-				<ColumnaTitle text="Código" />
+				<ColumnaTitle text={DataJson.primer.subtitle1} />
 
 				{
-					DataJson.primer.map((param) => (
+					DataJson.primer.links.map((param) => (
 						<LinkSocial
 							hrefLink={param.href}
 							imgSrc={param.img.src}
@@ -40,10 +38,10 @@ import ColumnaTitle from "../components/ColumnaTitle.astro";
 
 			<!-- Columna 2 -->
 			<Columna>
-				<ColumnaTitle text="Interés" />
+				<ColumnaTitle text={DataJson.primer.subtitle2} />
 
 				{
-					DataJson.segundo.map((param) => (
+					DataJson.segundo.links.map((param) => (
 						<LinkSocial
 							hrefLink={param.href}
 							imgSrc={param.img.src}
@@ -56,10 +54,10 @@ import ColumnaTitle from "../components/ColumnaTitle.astro";
 
 			<!-- Columna 3 -->
 			<Columna>
-				<ColumnaTitle text="Mas tarde" />
+				<ColumnaTitle text={DataJson.primer.subtitle3} />
 
 				{
-					DataJson.tercera.map((param) => (
+					DataJson.tercera.links.map((param) => (
 						<LinkSocial
 							hrefLink={param.href}
 							imgSrc={param.img.src}
@@ -71,16 +69,16 @@ import ColumnaTitle from "../components/ColumnaTitle.astro";
 			</Columna>
 		</ContainerGrid>
 
-		<Separator text="Sección 1" />
+		<Separator />
 
 		<!-- Segunda sección -->
-		<SubTitulo text="Hola mundo" />
+		<SubTitulo text={DataJson.segundo.title} />
 
 		<ContainerGrid>
 			<Columna>
-				<ColumnaTitle text="Hola mundo2 " />
+				<ColumnaTitle text={DataJson.segundo.subtitle1} />
 				{
-					DataJson.primer.map((param) => (
+					DataJson.primer.links.map((param) => (
 						<LinkSocial
 							hrefLink={param.href}
 							imgSrc={param.img.src}
@@ -92,10 +90,10 @@ import ColumnaTitle from "../components/ColumnaTitle.astro";
 			</Columna>
 
 			<Columna>
-				<ColumnaTitle text="Hola" />
+				<ColumnaTitle text={DataJson.segundo.subtitle2} />
 
 				{
-					DataJson.primer.map((param) => (
+					DataJson.primer.links.map((param) => (
 						<LinkSocial
 							hrefLink={param.href}
 							imgSrc={param.img.src}
@@ -107,9 +105,9 @@ import ColumnaTitle from "../components/ColumnaTitle.astro";
 			</Columna>
 
 			<Columna>
-				<ColumnaTitle text="Hola" />
+				<ColumnaTitle text={DataJson.segundo.subtitle3} />
 				{
-					DataJson.primer.map((param) => (
+					DataJson.primer.links.map((param) => (
 						<LinkSocial
 							hrefLink={param.href}
 							imgSrc={param.img.src}
