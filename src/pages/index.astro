@@ -11,16 +11,18 @@ import ContainerGrid from "../components/ContainerGrid.astro";
 import Separator from "../components/Separator.astro";
 import ColumnaTitle from "../components/ColumnaTitle.astro";
 
-import DataJson from "../assets/json/Links.json";
+import { searchLinks } from "../services/links";
+
+const { primer, segundo, tercera } = await searchLinks();
 ---
 
 <Layout>
 	<div class="container">
-		<Hero />
-		<SubTitulo text={DataJson.primer.title_section} />
+		<!-- <Hero /> -->
+		<SubTitulo text={primer.title_section} />
 
 		<ContainerGrid>
-			<Columna>
+			<!-- <Columna>
 				<ColumnaTitle text={DataJson.primer.subtitle_category_first} />
 			</Columna>
 			<Columna>
@@ -28,10 +30,10 @@ import DataJson from "../assets/json/Links.json";
 			</Columna>
 			<Columna>
 				<ColumnaTitle text={DataJson.primer.subtitle_category_three} />
-			</Columna>
+			</Columna> -->
 
 			{
-				DataJson.primer.links.map((param) => (
+				primer.links.map((param) => (
 					<Columna>
 						<LinkSocial
 							hrefLink={param.href}
@@ -47,15 +49,15 @@ import DataJson from "../assets/json/Links.json";
 		<Separator />
 
 		<!-- Segunda sección -->
-		<SubTitulo text={DataJson.segundo.title} />
+		<SubTitulo text={segundo.title} />
 
 		<ContainerGrid>
-			<Columna><ColumnaTitle text={DataJson.segundo.subtitle1} /></Columna>
+			<!-- <Columna><ColumnaTitle text={DataJson.segundo.subtitle1} /></Columna>
 			<Columna><ColumnaTitle text={DataJson.segundo.subtitle2} /></Columna>
-			<Columna><ColumnaTitle text={DataJson.segundo.subtitle3} /></Columna>
+			<Columna><ColumnaTitle text={DataJson.segundo.subtitle3} /></Columna> -->
 
 			{
-				DataJson.segundo.links.map((param) => (
+				segundo.links.map((param) => (
 					<Columna>
 						<LinkSocial
 							hrefLink={param.href}
