@@ -1,9 +1,34 @@
 ---
+import Columna from "./Columna.astro";
+import LinkSocial from "./LinkSocial.astro";
 
+interface Props {
+  links: {
+    href: string;
+    img: {
+      src: string;
+      alt: string;
+    };
+    span: string;
+  }[];
+}
+
+const { links } = Astro.props;
 ---
 
 <div class="links-container">
-  <slot />
+  {
+    links.map((param) => (
+      <Columna>
+        <LinkSocial
+          hrefLink={param.href}
+          imgSrc={param.img.src}
+          imgAlt={param.img.alt}
+          spanText={param.span}
+        />
+      </Columna>
+    ))
+  }
 </div>
 
 <style>
