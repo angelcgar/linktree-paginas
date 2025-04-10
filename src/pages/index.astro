@@ -1,83 +1,38 @@
 ---
 // import Welcome from "../components/Welcome.astro";
-import Columna from "../components/Columna.astro";
 import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 
-import LinkSocial from "../components/LinkSocial.astro";
 import SubTitulo from "../components/SubTitulo.astro";
 import ContainerGrid from "../components/ContainerGrid.astro";
 import Separator from "../components/Separator.astro";
-import ColumnaTitle from "../components/ColumnaTitle.astro";
 
 import { searchLinks } from "../services/links";
+import ContainerMain from "../components/ContainerMain.astro";
 
-const { primer, segundo, tercera } = await searchLinks();
+const links = await searchLinks();
 ---
 
 <Layout>
-	<div class="container">
-		<!-- <Hero /> -->
-		<SubTitulo text={primer.title_section} />
+	<ContainerMain>
+		<Hero />
 
-		<ContainerGrid>
-			<!-- <Columna>
-				<ColumnaTitle text={DataJson.primer.subtitle_category_first} />
-			</Columna>
-			<Columna>
-				<ColumnaTitle text={DataJson.primer.subtitle_category_two} />
-			</Columna>
-			<Columna>
-				<ColumnaTitle text={DataJson.primer.subtitle_category_three} />
-			</Columna> -->
-
-			{
-				primer.links.map((param) => (
-					<Columna>
-						<LinkSocial
-							hrefLink={param.href}
-							imgSrc={param.img.src}
-							imgAlt={param.img.alt}
-							spanText={param.span}
-						/>
-					</Columna>
-				))
-			}
-		</ContainerGrid>
-
+		<SubTitulo text={links[0].title_section} />
+		<ContainerGrid links={links[0].links} />
 		<Separator />
 
-		<!-- Segunda sección -->
-		<SubTitulo text={segundo.title} />
+		<SubTitulo text={links[1].title_section} />
+		<ContainerGrid links={links[1].links} />
+		<Separator />
 
-		<ContainerGrid>
-			<!-- <Columna><ColumnaTitle text={DataJson.segundo.subtitle1} /></Columna>
-			<Columna><ColumnaTitle text={DataJson.segundo.subtitle2} /></Columna>
-			<Columna><ColumnaTitle text={DataJson.segundo.subtitle3} /></Columna> -->
+		<SubTitulo text={links[2].title_section} />
+		<ContainerGrid links={links[2].links} />
+		<Separator />
 
-			{
-				segundo.links.map((param) => (
-					<Columna>
-						<LinkSocial
-							hrefLink={param.href}
-							imgSrc={param.img.src}
-							imgAlt={param.img.alt}
-							spanText={param.span}
-						/>
-					</Columna>
-				))
-			}
-		</ContainerGrid>
-		<Footer />
-	</div>
+		<SubTitulo text={links[3].title_section} />
+		<ContainerGrid links={links[3].links} />
+		<Separator />
+	</ContainerMain>
+	<Footer />
 </Layout>
-
-<style>
-	.container {
-		width: 90%;
-		max-width: 1200px;
-		margin: 40px auto;
-		text-align: center;
-	}
-</style>
