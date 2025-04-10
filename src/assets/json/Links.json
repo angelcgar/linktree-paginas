@@ -1,5 +1,5 @@
-{
-  "primer": {
+[
+  {
     "title_section": "Código de internet",
     "subtitle_category_first": "Código de repositorios",
     "subtitle_category_two": "Interés",
@@ -23,7 +23,8 @@
       }
     ]
   },
-  "segundo": {
+  {
+    "title_section": "Código de internet",
     "title": "Mas tarde",
     "subtitle1": "Código",
     "subtitle2": "Interés",
@@ -55,8 +56,8 @@
       }
     ]
   },
-  "tercera": {
-    "title": "Terceros links",
+  {
+    "title_section": "Terceros links",
     "subtitle1": "Código",
     "subtitle2": "Interés",
     "subtitle3": "Mas tarde",
@@ -76,7 +77,63 @@
           "alt": "Reddit"
         },
         "span": "Reddit - Comunidades de interés"
+      },
+      {
+        "href": "https://www.reddit.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+          "alt": "Reddit"
+        },
+        "span": "Reddit - Comunidades de interés"
+      },
+      {
+        "href": "https://www.reddit.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+          "alt": "Reddit"
+        },
+        "span": "Reddit - Comunidades de interés"
+      }
+    ]
+  },
+  {
+    "title_section": "Terceros links",
+    "subtitle1": "Código",
+    "subtitle2": "Interés",
+    "subtitle3": "Mas tarde",
+    "links": [
+      {
+        "href": "https://www.udemy.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
+          "alt": "Udemy"
+        },
+        "span": "Udemy - Cursos en línea"
+      },
+      {
+        "href": "https://www.reddit.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+          "alt": "Reddit"
+        },
+        "span": "Reddit - Comunidades de interés"
+      },
+      {
+        "href": "https://www.reddit.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+          "alt": "Reddit"
+        },
+        "span": "Reddit - Comunidades de interés"
+      },
+      {
+        "href": "https://www.reddit.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+          "alt": "Reddit"
+        },
+        "span": "Reddit - Comunidades de interés"
       }
     ]
   }
-}
+]
