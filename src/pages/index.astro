@@ -10,6 +10,8 @@ import Separator from "../components/Separator.astro";
 
 import { searchLinks } from "../services/links";
 import ContainerMain from "../components/ContainerMain.astro";
+import Section from "../components/Section.astro";
+import ColumnaTitle from "../components/ColumnaTitle.astro";
 
 const links = await searchLinks();
 ---
@@ -18,21 +20,17 @@ const links = await searchLinks();
 	<ContainerMain>
 		<Hero />
 
-		<SubTitulo text={links[0].title_section} />
-		<ContainerGrid links={links[0].links} />
-		<Separator />
+		<SubTitulo text="Hola mundo" />
 
-		<SubTitulo text={links[1].title_section} />
-		<ContainerGrid links={links[1].links} />
-		<Separator />
-
-		<SubTitulo text={links[2].title_section} />
-		<ContainerGrid links={links[2].links} />
-		<Separator />
-
-		<SubTitulo text={links[3].title_section} />
-		<ContainerGrid links={links[3].links} />
-		<Separator />
+		{
+			links.map((link) => (
+				<Section>
+					<ColumnaTitle text={link.title_section} />
+					<ContainerGrid links={link.links} />
+					<Separator />
+				</Section>
+			))
+		}
 	</ContainerMain>
 	<Footer />
 </Layout>
