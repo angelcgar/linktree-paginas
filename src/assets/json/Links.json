@@ -20,11 +20,19 @@
           "alt": "Medium"
         },
         "span": "the-algorithms - Para aprender sobre algoritmos"
+      },
+      {
+        "href": "https://stackoverflow.com",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111628.png",
+          "alt": "Stack Overflow"
+        },
+        "span": "Stack Overflow - Preguntas y respuestas"
       }
     ]
   },
   {
-    "title_section": "Código de internet",
+    "title_section": "Estudio",
     "title": "Mas tarde",
     "subtitle1": "Código",
     "subtitle2": "Interés",
@@ -39,30 +47,6 @@
         "span": "YouTube - Videos educativos"
       },
       {
-        "href": "https://stackoverflow.com",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111628.png",
-          "alt": "Stack Overflow"
-        },
-        "span": "Stack Overflow - Preguntas y respuestas"
-      },
-      {
-        "href": "https://stackoverflow.com",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111628.png",
-          "alt": "Stack Overflow"
-        },
-        "span": "Stack Overflow - Preguntas y respuestas"
-      }
-    ]
-  },
-  {
-    "title_section": "Terceros links",
-    "subtitle1": "Código",
-    "subtitle2": "Interés",
-    "subtitle3": "Mas tarde",
-    "links": [
-      {
         "href": "https://www.udemy.com",
         "img": {
           "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
@@ -70,6 +54,54 @@
         },
         "span": "Udemy - Cursos en línea"
       },
+      {
+        "href": "https://www.efset.org/es/ef-set-50/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/5309/5309804.png",
+          "alt": "EF Set"
+        },
+        "span": "EF Set - Prueba de inglés"
+      },
+      {
+        "href": "https://rapidapi.com/learn",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/16787/16787391.png",
+          "alt": "RapidAPI"
+        },
+        "span": "RapidAPI - Aprende a programar todo sobre APIs"
+      },
+      {
+        "href": "https://codelabs.developers.google.com/codelabs/flutter-codelab-first?hl=es-419#0",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/888/888846.png",
+          "alt": "Flutter"
+        },
+        "span": "Flutter - Aprende a programar todo sobre Flutter"
+      },
+      {
+        "href": "https://www.bancoazteca.com.mx/educacion-financiera.html",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/7897/7897235.png",
+          "alt": "Banco Azteca"
+        },
+        "span": "Banco Azteca - Educación financiera"
+      },
+      {
+        "href": "https://google.github.io/comprehensive-rust/es/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/11637/11637382.png",
+          "alt": "Rust"
+        },
+        "span": "Rust - Aprende a programar todo sobre Rust"
+      }
+    ]
+  },
+  {
+    "title_section": "Barra de favoritos",
+    "subtitle1": "Código",
+    "subtitle2": "Interés",
+    "subtitle3": "Mas tarde",
+    "links": [
       {
         "href": "https://www.reddit.com",
         "img": {
