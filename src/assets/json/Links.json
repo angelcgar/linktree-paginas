@@ -93,6 +93,134 @@
           "alt": "Rust"
         },
         "span": "Rust - Aprende a programar todo sobre Rust"
+      },
+      {
+        "href": "https://www.youtube.com/playlist?list=PL1y1iaEtjSYiiSGVlL1cHsXN_kvJOOhu-",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+          "alt": "YouTube"
+        },
+        "span": "CS 253 Web Security - Aprende sobre segurudad web"
+      },
+      {
+        "href": "https://web.dev/learn/testing/welcome?hl=es-419",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/888/888846.png",
+          "alt": "Google"
+        },
+        "span": "Curso de testing de Google - Aprende sobre testing en el lado frond-end"
+      },
+      {
+        "href": "https://www.kaggle.com/learn",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/888/888846.png",
+          "alt": "Google"
+        },
+        "span": "Cursos GRATIS para aprender CIENCIA DE DATOS desde cero!"
+      },
+      {
+        "href": "https://web.dev/learn/pwa/welcome?hl=es-419",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/888/888846.png",
+          "alt": "Google"
+        },
+        "span": "Curso de PWA con google"
+      },
+      {
+        "href": "https://developer.android.com/courses?hl=es-419",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/888/888846.png",
+          "alt": "Google"
+        },
+        "span": "Cursos de android por Google"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=Dl8x8EWXq8s",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+          "alt": "YouTube"
+        },
+        "span": "Curso de React native"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=4Dko5W96WHg&t=1s",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+          "alt": "YouTube"
+        },
+        "span": "Curso de Docker"
+      },
+      {
+        "href": "https://web.dev/learn/javascript/welcome?hl=es-419",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/888/888846.png",
+          "alt": "Google"
+        },
+        "span": "Aprende JavaScript con Google"
+      },
+      {
+        "href": "https://landing.raiola.link/curso-practico-wordpress/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/174/174881.png",
+          "alt": "WordPress"
+        },
+        "span": "Curso práctico de WordPress para aprender a crear tu página web"
+      },
+      {
+        "href": "https://skillshop.exceedlms.com/student/catalog/browse",
+        "img": {
+          "src": "https://www.gstatic.com/devrel-devsite/prod/vd31e3ed8994e05c7f2cd0cf68a402ca7902bb92b6ec0977d7ef2a1c699fae3f9/codelabs/images/favicon.png",
+          "alt": "Google"
+        },
+        "span": "Google Ads"
+      },
+      {
+        "href": "https://codelabs.developers.google.com/?hl=es-419",
+        "img": {
+          "src": "https://www.gstatic.com/devrel-devsite/prod/vd31e3ed8994e05c7f2cd0cf68a402ca7902bb92b6ec0977d7ef2a1c699fae3f9/codelabs/images/favicon.png",
+          "alt": "Google"
+        },
+        "span": "Google codelabs"
+      },
+      {
+        "href": "https://claseflix.io/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
+          "alt": "Udemy"
+        },
+        "span": "Claseflix - Cursos de programación"
+      },
+      {
+        "href": "https://academy.hubspot.com/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
+          "alt": "Udemy"
+        },
+        "span": "cursos de marketing digital"
+      },
+      {
+        "href": "https://www.sql-easy.com/es/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/128/5815/5815886.png",
+          "alt": "SQL"
+        },
+        "span": "Curso de SQL - Aprende SQL desde cero"
+      },
+      {
+        "href": "https://www.deeplearning.ai/",
+        "img": {
+          "src": "https://www.deeplearning.ai/static/favicons/favicon.ico",
+          "alt": "SQL"
+        },
+        "span": "Curso de IA - Aprende IA desde cero"
+      },
+      {
+        "href": "https://course.fast.ai/",
+        "img": {
+          "src": "https://www.deeplearning.ai/static/favicons/favicon.ico",
+          "alt": "SQL"
+        },
+        "span": "Curso de IA - Aprende IA desde cero"
       }
     ]
   },
@@ -135,12 +263,12 @@
     "subtitle3": "Mas tarde",
     "links": [
       {
-        "href": "https://www.udemy.com",
+        "href": "https://serpapi.com/blog/web-scraping-in-javascript-complete-tutorial-for-beginner/",
         "img": {
           "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
-          "alt": "Udemy"
+          "alt": "pagina random"
         },
-        "span": "Udemy - Cursos en línea"
+        "span": "Hacer web scraping con js - para hacer pruebas"
       },
       {
         "href": "https://www.reddit.com",
