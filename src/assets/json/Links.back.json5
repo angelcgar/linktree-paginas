@@ -1,7 +1,15 @@
 [
   {
     "title_section": "Código de internet",
+    "subtitle_category_first": "Código de repositorios",
+    "subtitle_category_two": "Interés",
+    "subtitle_category_three": "En la mira",
     "links": [
+      // Este es un comentario
+      // empezamos con 64
+
+      // HERRAMIENTAS 66
+      
       {
         "href": "https://github.com",
         "img": {
@@ -11,13 +19,23 @@
         "span": "GitHub - Repositorios de código"
       },
       {
-        "href": "https://the-algorithms.com/",
+        "href": "https://serpapi.com/blog/web-scraping-in-javascript-complete-tutorial-for-beginner/",
         "img": {
-          "src": "https://cdn-icons-png.flaticon.com/128/4941/4941052.png",
-          "alt": "Medium"
+          "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
+          "alt": "pagina random"
         },
-        "span": "the-algorithms - Para aprender sobre algoritmos"
+        "span": "Hacer web scraping con js - para hacer pruebas"
       },
+      // {
+      //   "href": "https://the-algorithms.com/",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/128/4941/4941052.png",
+      //     "alt": "Medium"
+      //   },
+      //   "span": "the-algorithms - Para aprender sobre algoritmos"
+      // },
+
+      // REDES SOCIALES 67
       {
         "href": "https://stackoverflow.com",
         "img": {
@@ -30,7 +48,29 @@
   },
   {
     "title_section": "Estudio",
+    "title": "Mas tarde",
+    "subtitle1": "Código",
+    "subtitle2": "Interés",
+    "subtitle3": "Mas tarde",
     "links": [
+      // {
+      //   "href": "https://www.youtube.com",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+      //     "alt": "YouTube"
+      //   },
+      //   "span": "YouTube - Videos educativos"
+      // },
+      // {
+      //   "href": "https://www.udemy.com",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
+      //     "alt": "Udemy"
+      //   },
+      //   "span": "Udemy - Cursos en línea"
+      // },
+
+      // APRENDIZAJE
       {
         "href": "https://www.efset.org/es/ef-set-50/",
         "img": {
@@ -78,6 +118,14 @@
           "alt": "YouTube"
         },
         "span": "CS 253 Web Security - Aprende sobre segurudad web"
+      },
+      {
+        "href": "https://hackingvault.com/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+          "alt": "website"
+        },
+        "span": "Buscador de máquinas resueltas por s4vitar"
       },
       {
         "href": "https://web.dev/learn/testing/welcome?hl=es-419",
@@ -199,35 +247,39 @@
         },
         "span": "Curso de IA - Aprende IA desde cero"
       }
+
     ]
   },
   {
     "title_section": "Barra de favoritos",
+    "subtitle1": "Código",
+    "subtitle2": "Interés",
+    "subtitle3": "Mas tarde",
     "links": [
-      {
-        "href": "https://www.reddit.com",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
-          "alt": "Reddit"
-        },
-        "span": "Reddit - Comunidades de interés"
-      },
-      {
-        "href": "https://www.reddit.com",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
-          "alt": "Reddit"
-        },
-        "span": "Reddit - Comunidades de interés"
-      },
-      {
-        "href": "https://www.reddit.com",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
-          "alt": "Reddit"
-        },
-        "span": "Reddit - Comunidades de interés"
-      }
+      // {
+      //   "href": "https://www.reddit.com",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+      //     "alt": "Reddit"
+      //   },
+      //   "span": "Reddit - Comunidades de interés"
+      // },
+      // {
+      //   "href": "https://www.reddit.com",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+      //     "alt": "Reddit"
+      //   },
+      //   "span": "Reddit - Comunidades de interés"
+      // },
+      // {
+      //   "href": "https://www.reddit.com",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+      //     "alt": "Reddit"
+      //   },
+      //   "span": "Reddit - Comunidades de interés"
+      // }
     ]
   },
   {
@@ -236,38 +288,31 @@
     "subtitle2": "Interés",
     "subtitle3": "Mas tarde",
     "links": [
-      {
-        "href": "https://serpapi.com/blog/web-scraping-in-javascript-complete-tutorial-for-beginner/",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/1688/1688400.png",
-          "alt": "pagina random"
-        },
-        "span": "Hacer web scraping con js - para hacer pruebas"
-      },
-      {
-        "href": "https://www.reddit.com",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
-          "alt": "Reddit"
-        },
-        "span": "Reddit - Comunidades de interés"
-      },
-      {
-        "href": "https://www.reddit.com",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
-          "alt": "Reddit"
-        },
-        "span": "Reddit - Comunidades de interés"
-      },
-      {
-        "href": "https://www.reddit.com",
-        "img": {
-          "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
-          "alt": "Reddit"
-        },
-        "span": "Reddit - Comunidades de interés"
-      }
+      // HERRAMIENTAS
+      // {
+      //   "href": "https://www.reddit.com",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+      //     "alt": "Reddit"
+      //   },
+      //   "span": "Reddit - Comunidades de interés"
+      // },
+      // {
+      //   "href": "https://www.reddit.com",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+      //     "alt": "Reddit"
+      //   },
+      //   "span": "Reddit - Comunidades de interés"
+      // },
+      // {
+      //   "href": "https://www.reddit.com",
+      //   "img": {
+      //     "src": "https://cdn-icons-png.flaticon.com/512/2111/2111589.png",
+      //     "alt": "Reddit"
+      //   },
+      //   "span": "Reddit - Comunidades de interés"
+      // }
     ]
   }
 ]
