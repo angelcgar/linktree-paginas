@@ -1,17 +1,16 @@
 ---
 // import Welcome from "../components/Welcome.astro";
+import ColumnaTitle from "../components/ColumnaTitle.astro";
+import ContainerGrid from "../components/ContainerGrid.astro";
+import ContainerMain from "../components/ContainerMain.astro";
 import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
-import Layout from "../layouts/Layout.astro";
-
-import SubTitulo from "../components/SubTitulo.astro";
-import ContainerGrid from "../components/ContainerGrid.astro";
-import Separator from "../components/Separator.astro";
-
-import { searchLinks } from "../services/links";
-import ContainerMain from "../components/ContainerMain.astro";
 import Section from "../components/Section.astro";
-import ColumnaTitle from "../components/ColumnaTitle.astro";
+import Separator from "../components/Separator.astro";
+import SubTitulo from "../components/SubTitulo.astro";
+
+import Layout from "../layouts/Layout.astro";
+import { searchLinks } from "../services/links";
 
 const links = await searchLinks();
 ---
