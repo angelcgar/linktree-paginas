@@ -19,13 +19,13 @@ const links = await searchLinks();
 	<ContainerMain>
 		<Hero />
 
-		<SubTitulo text="Hola mundo" />
+		<!-- <SubTitulo text="Hola mundo" /> -->
 
 		{
-			links.map((link) => (
+			links.map(({ title_section, links }) => (
 				<Section>
-					<ColumnaTitle text={link.title_section} />
-					<ContainerGrid links={link.links} />
+					<ColumnaTitle text={title_section} />
+					<ContainerGrid links={links} />
 					<Separator />
 				</Section>
 			))

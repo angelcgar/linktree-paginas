@@ -13,14 +13,9 @@ const { links } = Astro.props;
 
 <div class="links-container">
   {
-    links.map((param) => (
+    links.map(({ href, img: { alt, src }, span }) => (
       <Columna>
-        <LinkSocial
-          hrefLink={param.href}
-          imgSrc={param.img.src}
-          imgAlt={param.img.alt}
-          spanText={param.span}
-        />
+        <LinkSocial hrefLink={href} imgSrc={src} imgAlt={alt} spanText={span} />
       </Columna>
     ))
   }
