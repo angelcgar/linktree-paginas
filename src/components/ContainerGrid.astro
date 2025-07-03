@@ -2,15 +2,10 @@
 import Columna from "./Columna.astro";
 import LinkSocial from "./LinkSocial.astro";
 
+import type { LinkElement } from "../interfaces/links.interface";
+
 interface Props {
-  links: {
-    href: string;
-    img: {
-      src: string;
-      alt: string;
-    };
-    span: string;
-  }[];
+  links: LinkElement[];
 }
 
 const { links } = Astro.props;

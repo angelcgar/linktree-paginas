@@ -1,6 +1,6 @@
 [
   {
-    "title_section": "Código de internet",
+    "title_section": "Código en internet por ver",
     "links": [
       {
         "href": "https://github.com",
@@ -232,9 +232,6 @@
   },
   {
     "title_section": "Terceros links",
-    "subtitle1": "Código",
-    "subtitle2": "Interés",
-    "subtitle3": "Mas tarde",
     "links": [
       {
         "href": "https://serpapi.com/blog/web-scraping-in-javascript-complete-tutorial-for-beginner/",
