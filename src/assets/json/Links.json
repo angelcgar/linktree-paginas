@@ -266,5 +266,26 @@
         "span": "Reddit - Comunidades de interés"
       }
     ]
+  },
+  {
+    "title_section": "Ocio",
+    "links": [
+      {
+        "href": "https://www.vitaminagg.net/",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+          "alt": "YouTube"
+        },
+        "span": "VitaminAGG - La mejor comunidad de YouTube"
+      },
+      {
+        "href": "https://watchwave-v2.vercel.app/landing",
+        "img": {
+          "src": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+          "alt": "YouTube"
+        },
+        "span": "Watchwave - La mejor comunidad de películas y series"
+      }
+    ]
   }
 ]
